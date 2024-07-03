@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <style>
+    @keyframes moveDown {
+      from { stroke-dashoffset: 0; }
+      to { stroke-dashoffset: 300; }
+    }
+    @keyframes moveUp {
+      from { stroke-dashoffset: 300; }
+      to { stroke-dashoffset: 0; }
+    }
+    .request { animation: moveUp 8s linear infinite; }
+    .response { animation: moveDown 8s linear infinite; }
+    text { font-family: Arial, sans-serif; }
+    .title { font-size: 20px; font-weight: bold; }
+    .subtitle { font-size: 14px; }
+    .detail { font-size: 12px; }
+  </style>
+  
+  <!-- Titles -->
+  <text x="200" y="30" class="title" text-anchor="middle">Server-Sent Events (SSE)</text>
+  <text x="600" y="30" class="title" text-anchor="middle">WebSocket (WS)</text>
+  
+  <!-- SSE Section -->
+  <rect x="50" y="50" width="310" height="440" fill="none" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- SSE Server -->
+  <rect x="170" y="70" width="80" height="60" fill="#e0e0e0" stroke="#000" stroke-width="2"/>
+  <text x="210" y="105" class="subtitle" text-anchor="middle">Server</text>
+  
+  <!-- SSE Client (Mobile Phone) -->
+  <rect x="185" y="380" width="40" height="70" rx="5" fill="#f0f0f0" stroke="#000" stroke-width="2"/>
+  <rect x="189" y="385" width="32" height="50" fill="#fff" stroke="#000" stroke-width="1"/>
+  <circle cx="205" cy="445" r="3" fill="#000"/>
+  <text x="205" y="475" class="subtitle" text-anchor="middle">Client</text>
+  
+  <!-- SSE Data Flow -->
+  <line x1="205" y1="130" x2="205" y2="380" stroke="#007bff" stroke-width="2"/>
+  <text x="90" y="270" class="detail" text-anchor="start">Initial Request</text>
+  
+  <line x1="220" y1="130" x2="220" y2="380" class="response" stroke="#ff0000" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="240" y="270" class="detail" text-anchor="start">Server Response</text>
+  
+  <!-- WebSocket Section -->
+  <rect x="450" y="50" width="310" height="440" fill="none" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- WS Server -->
+  <rect x="570" y="70" width="80" height="60" fill="#e0e0e0" stroke="#000" stroke-width="2"/>
+  <text x="610" y="95" class="subtitle" text-anchor="middle">Server</text>
+  <text x="610" y="115" class="subtitle" text-anchor="middle">Responses</text>
+  
+  <!-- WS Clients (Mobile Phones) -->
+  <rect x="525" y="380" width="40" height="70" rx="5" fill="#f0f0f0" stroke="#000" stroke-width="2"/>
+  <rect x="529" y="385" width="32" height="50" fill="#fff" stroke="#000" stroke-width="1"/>
+  <circle cx="545" cy="445" r="3" fill="#000"/>
+  <text x="545" y="475" class="subtitle" text-anchor="middle">Client 1</text>
+  
+  <rect x="645" y="380" width="40" height="70" rx="5" fill="#f0f0f0" stroke="#000" stroke-width="2"/>
+  <rect x="649" y="385" width="32" height="50" fill="#fff" stroke="#000" stroke-width="1"/>
+  <circle cx="665" cy="445" r="3" fill="#000"/>
+  <text x="665" y="475" class="subtitle" text-anchor="middle">Client 2</text>
+  
+  <!-- WS Data Flow -->
+  <line x1="580" y1="130" x2="545" y2="380" class="request" stroke="#007bff" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="640" y1="130" x2="665" y2="380" class="request" stroke="#007bff" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="470" y="230" class="detail" text-anchor="start">Client 1 request</text>
+  <text x="745" y="230" class="detail" text-anchor="end">Client 2 request</text>
+  
+  <line x1="600" y1="130" x2="565" y2="380" class="response" stroke="#ff0000" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="620" y1="130" x2="645" y2="380" class="response" stroke="#ff0000" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- New Server Response text -->
+  <text x="608" y="340" class="detail" text-anchor="middle">Server</text>
+  <text x="608" y="355" class="detail" text-anchor="middle">Response</text>
+</svg>

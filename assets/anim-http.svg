@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350">
+  <style>
+    @keyframes moveRight {
+      from { transform: translateX(0); }
+      to { transform: translateX(200px); }
+    }
+    @keyframes moveLeft {
+      from { transform: translateX(200px); }
+      to { transform: translateX(0); }
+    }
+    .request { animation: moveRight 2s infinite; }
+    .response { animation: moveLeft 2s infinite; }
+    .json-text { font-family: monospace; font-size: 10px; }
+  </style>
+  
+  <!-- Mobile Phone (Client) -->
+  <rect x="10" y="70" width="80" height="140" rx="10" fill="#f0f0f0" stroke="#000" stroke-width="2"/>
+  <rect x="20" y="80" width="60" height="100" fill="#fff" stroke="#000" stroke-width="1"/>
+  <circle cx="50" cy="190" r="8" fill="#f0f0f0" stroke="#000" stroke-width="1"/>
+  
+  <!-- Server -->
+  <rect x="310" y="70" width="80" height="140" fill="#e0e0e0" stroke="#000" stroke-width="2"/>
+  <rect x="320" y="80" width="60" height="20" fill="#fff" stroke="#000" stroke-width="1"/>
+  <rect x="320" y="110" width="60" height="20" fill="#fff" stroke="#000" stroke-width="1"/>
+  <rect x="320" y="140" width="60" height="20" fill="#fff" stroke="#000" stroke-width="1"/>
+  
+  <!-- HTTP Request Arrow and JSON -->
+  <g class="request">
+    <line x1="100" y1="100" x2="300" y2="100" stroke="#007bff" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="150" y="90" font-family="Arial" font-size="12" fill="#007bff">HTTP POST /api/data</text>
+    <rect x="120" y="110" width="160" height="70" fill="#f8f9fa" stroke="#007bff" stroke-width="1"/>
+    <text x="125" y="125" class="json-text" fill="#007bff">
+      <tspan x="125" dy="0">{</tspan>
+      <tspan x="125" dy="12">"id": 1234,</tspan>
+      <tspan x="125" dy="12">"name": "John Doe",</tspan>
+      <tspan x="125" dy="12">"action": "update"</tspan>
+      <tspan x="125" dy="12">}</tspan>
+    </text>
+  </g>
+  
+  <!-- HTTP Response Arrow and JSON -->
+  <g class="response">
+    <line x1="300" y1="220" x2="100" y2="220" stroke="#28a745" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="150" y="210" font-family="Arial" font-size="12" fill="#28a745">HTTP 200 OK</text>
+    <rect x="120" y="230" width="165" height="70" fill="#f8f9fa" stroke="#28a745" stroke-width="1"/>
+    <text x="125" y="245" class="json-text" fill="#28a745">
+      <tspan x="125" dy="0">{</tspan>
+      <tspan x="125" dy="12">"status": "success",</tspan>
+      <tspan x="125" dy="12">"message": "Data updated",</tspan>
+      <tspan x="125" dy="12">"timestamp": 1624451200</tspan>
+      <tspan x="125" dy="12">}</tspan>
+    </text>
+  </g>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7"/>
+    </marker>
+  </defs>
+</svg>
