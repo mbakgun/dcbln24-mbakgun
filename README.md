@@ -49,8 +49,8 @@ The primary goal of this project is to demonstrate the capabilities of Kotlin Mu
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-repo/dcbln24-code.git
-    cd dcbln24-code
+    git clone https://github.com/mbakgun/dcbln24-mbakgun.git
+    cd dcbln24-mbakgun
     ```
 
 2. **Build the server**:
