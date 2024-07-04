@@ -75,4 +75,5 @@ The primary goal of this project is to demonstrate the capabilities of Kotlin Mu
 
 ## Learn More
 
-For more information about Kotlin Multiplatform, visit the [official documentation](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html).
+* [Canva Presentation](https://www.canva.com/design/DAGIeydEGd8/2I_DlazTkL99HbS6HL_aqA/view)
+* For more information about Kotlin Multiplatform, visit the [official documentation](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html).
