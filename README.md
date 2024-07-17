@@ -76,4 +76,5 @@ The primary goal of this project is to demonstrate the capabilities of Kotlin Mu
 ## Learn More
 
 * [Canva Presentation](https://www.canva.com/design/DAGIeydEGd8/2I_DlazTkL99HbS6HL_aqA/view)
+* [KTOR-7186 : WebSocket clients via SharedFlow](https://github.com/ktorio/ktor-documentation/pull/495)
 * For more information about Kotlin Multiplatform, visit the [official documentation](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html).
