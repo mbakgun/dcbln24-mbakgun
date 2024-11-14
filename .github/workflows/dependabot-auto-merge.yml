@@ -1,0 +1,24 @@
+name: Auto Merge Pull Requests
+on:
+  pull_request:
+    branches:
+      - master
+  pull_request_target:
+    branches:
+      - master
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Automatically Merge Dependabot PRs
+        uses: pascalgn/automerge-action@v0.15.6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MERGE_LABELS: "dependencies"
+          MERGE_METHOD: "squash"
+          MERGE_COMMIT_MESSAGE: "pull-request-title"
+          MERGE_FILTER_AUTHOR: "dependabot[bot]"
