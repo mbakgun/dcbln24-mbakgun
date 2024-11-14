@@ -79,3 +79,4 @@ The primary goal of this project is to demonstrate the capabilities of Kotlin Mu
 * [KTOR-7186 : WebSocket clients via SharedFlow](https://github.com/ktorio/ktor-documentation/pull/495)
 * For more information about Kotlin Multiplatform, visit the [official documentation](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html).
 * [Droidcon Presentation](https://www.droidcon.com/2024/08/30/real-time-communication-in-android-http-websockets-and-sse/)
+![Droidcon Presentation](./assets/dc-banner.webp)
