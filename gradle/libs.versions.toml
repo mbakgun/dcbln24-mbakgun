@@ -28,7 +28,7 @@ ktorClientCIO = { module = "io.ktor:ktor-client-cio", version.ref="ktor" }
 ktorClientJson = { module = "io.ktor:ktor-client-json", version.ref="ktor" }
 ktorClientLogging = { module = "io.ktor:ktor-client-logging", version.ref="ktor" }
 logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
-navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version = "2.9.0-alpha17" }
+navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version = "2.9.0-beta01" }
 androidx-lifecycle-runtime-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
 androidx-lifecycle-viewmodel-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "androidx-lifecycle" }
 koin = { module = "io.insert-koin:koin-android", version.ref="koin" }
