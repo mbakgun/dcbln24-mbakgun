@@ -9,7 +9,7 @@ kotlin = "2.3.20"
 ktor = "3.4.1"
 lifecycleRuntimeAndroid = "2.8.3"
 logback = "1.5.32"
-androidx-lifecycle = "2.9.6"
+androidx-lifecycle = "2.10.0"
 koin = "4.2.0"
 
 [libraries]
