@@ -10,7 +10,7 @@ ktor = "3.5.0"
 lifecycleRuntimeAndroid = "2.8.3"
 logback = "1.5.34"
 androidx-lifecycle = "2.10.0"
-koin = "4.2.1"
+koin = "4.2.2"
 
 [libraries]
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
