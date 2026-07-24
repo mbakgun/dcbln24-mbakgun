@@ -8,7 +8,7 @@ compose-plugin = "1.11.1"
 kotlin = "2.4.10"
 ktor = "3.5.1"
 lifecycleRuntimeAndroid = "2.8.3"
-logback = "1.5.38"
+logback = "1.6.0"
 androidx-lifecycle = "2.11.0"
 koin = "4.2.2"
 
